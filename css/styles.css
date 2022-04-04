@@ -4,11 +4,15 @@
   --akcent: #2196f3;
   --primary-wite-color: #fff;
   --secondary-color-two: rgba(245, 244, 250, 1);
+  --color-fon-hed-fot: rgba(47, 48, 58, 1);
 }
 
 body {
   background-color: var(--primary-wite-color);
   color: var(--primery-text-cplor);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0, 03em;
 }
 
 .list {
@@ -19,12 +23,18 @@ body {
 
 .logo {
   color: var(--akcent);
+  font-family: Raleway, sans-serif;
 }
 
 /* nav---------------------------------------- */
 
 .site-nav .link {
   color: var(--primery-text-cplor);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0, 02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -33,6 +43,11 @@ body {
 
 .site-auth .link {
   color: var(--secondary-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0, 02em;
 }
 .site-auth .link:hover,
 .site-auth .link:focus {
@@ -44,11 +59,17 @@ body {
 }
 
 /* button----------------------------------------  */
-
+/* button hero */
 .button .primary {
   color: var(--primary-wite-color);
   background-color: var(--akcent);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
+/* button two page */
 .button .secondary {
   color: var(--primery-text-cplor);
   background-color: var(--secondary-color-two);
@@ -60,28 +81,73 @@ body {
 }
 
 /* main---------------------------------------- */
-
-.content .mine {
-  color: var(--primery-text-cplor);
+/* hero */
+.content .hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
-.content .secondary {
+/* work */
+.content.work .content-main {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+.content.work .secondary {
   color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
-
-.employees .main {
-  color: var(--primery-text-cplor);
+/* photo */
+.content .head-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
-.employees .secondary {
+/* employees */
+.content .employees-mine {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.content .employees-secondary {
   color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
-/* footer---------------------------------------- */
-
-.footer-text {
-  color: rgba(255, 255, 255, 0.6);
+/* content two page */
+.content.photo .photo-main {
+  color: var(--primery-text-cplor);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.footer-adres {
+.content.photo .photo-secondary {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.97;
+}
+
+/* footer */
+.footer .footer-adres {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.97;
+}
+.footer .footer-nav {
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.97;
 }
 
 /* support information---------------------------------------- */
