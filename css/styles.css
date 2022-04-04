@@ -63,6 +63,8 @@ body {
 .button .primary {
   color: var(--primary-wite-color);
   background-color: var(--akcent);
+  cursor: pointer;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -73,6 +75,11 @@ body {
 .button .secondary {
   color: var(--primery-text-cplor);
   background-color: var(--secondary-color-two);
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1/62;
 }
 .button .secondary:hover,
 .button .secondary:focus {
@@ -82,7 +89,11 @@ body {
 
 /* main---------------------------------------- */
 /* hero */
+.content.button {
+  background-color: var(--color-fon-hed-fot);
+}
 .content .hero-text {
+  color: var(--primary-wite-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -109,6 +120,12 @@ body {
   text-align: center;
 }
 /* employees */
+.content.employees {
+  background-color: var(--secondary-color-two);
+}
+.content.employees .fon {
+  background-color: var(--primary-wite-color);
+}
 .content .employees-mine {
   font-weight: 500;
   font-size: 16px;
@@ -137,6 +154,9 @@ body {
 }
 
 /* footer */
+.footer {
+  background-color: var(--color-fon-hed-fot);
+}
 .footer .footer-adres {
   color: #fff;
   font-weight: 400;
