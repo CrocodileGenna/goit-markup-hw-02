@@ -101,12 +101,12 @@ body {
   letter-spacing: 0.06em;
 }
 /* work */
-.content.work .content-main {
+.content .work-main {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
-.content.work .secondary {
+.content .work-secondary {
   color: var(--secondary-color);
 
   font-size: 14px;
