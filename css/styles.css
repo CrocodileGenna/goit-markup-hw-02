@@ -24,6 +24,11 @@ body {
 .logo {
   color: var(--akcent);
   font-family: Raleway, sans-serif;
+
+  text-decoration: none;
+}
+.logo .studio {
+  color: var(--primery-text-cplor);
 }
 
 /* nav---------------------------------------- */
@@ -35,6 +40,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -48,6 +55,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  text-decoration: none;
 }
 .site-auth .link:hover,
 .site-auth .link:focus {
@@ -139,6 +148,9 @@ body {
 }
 
 /* content two page */
+.content .photo-text {
+  text-decoration: none;
+}
 .content.photo .photo-main {
   color: var(--primery-text-cplor);
   font-weight: 700;
@@ -157,17 +169,24 @@ body {
 .footer {
   background-color: var(--color-fon-hed-fot);
 }
+.footer-studio {
+  color: var(--primary-wite-color);
+}
 .footer .footer-adres {
   color: #fff;
 
   font-size: 14px;
   line-height: 1.97;
+
+  text-decoration: none;
 }
 .footer .footer-nav {
   color: rgba(255, 255, 255, 0.6);
 
   font-size: 14px;
   line-height: 1.97;
+
+  text-decoration: none;
 }
 
 /* support information---------------------------------------- */
