@@ -14,20 +14,44 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+b {
+  margin: 0;
+  padding: 0;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid rgb(225, 169, 159);
 }
 
 /* logo----------------------------------------  */
 
 .logo {
+  margin-right: 93px;
+
   color: var(--akcent);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
   text-decoration: none;
 }
 
@@ -35,56 +59,28 @@ body {
   color: var(--primery-text-cplor);
 }
 
-/* nav---------------------------------------- */
+/* BUTTON ----------------------------------------  */
 
-.site-nav .link {
-  color: var(--primery-text-cplor);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  text-decoration: none;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--akcent);
-}
-
-.site-auth .link {
-  color: var(--secondary-color);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  text-decoration: none;
-}
-.site-auth .link:hover,
-.site-auth .link:focus {
-  color: var(--akcent);
-}
-
-.site-nav .link.curent {
-  color: var(--akcent);
-}
-
-/* button----------------------------------------  */
-/* button hero */
+/* button hero ---------------------------------------- */
 .button .primary {
+  margin-top: 30px;
+
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   color: var(--primary-wite-color);
   background-color: var(--akcent);
   cursor: pointer;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
 }
-/* button two page */
+
+/* button two page ---------------------------------------- */
 .button .secondary {
   font-family: Roboto, sans-serif;
   color: var(--primery-text-cplor);
@@ -103,49 +99,167 @@ body {
   background-color: var(--akcent);
 }
 
-/* main---------------------------------------- */
-/* hero */
+/* HEADER ---------------------------------------- */
+
+.main-meny {
+  display: flex;
+}
+.main-meny .nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav .link.curent {
+  color: var(--akcent);
+}
+
+/* nav ---------------------------------------- */
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 30px;
+}
+/* .site-nav .item + .item {
+  margin-left: 30px;
+} */
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primery-text-cplor);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--akcent);
+}
+
+/* auth---------------------------------------- */
+.site-auth {
+  display: flex;
+  margin-left: auto;
+}
+.site-auth .item:not(:last-child) {
+  margin-right: 30px;
+}
+/* .site-auth .item + .item {
+  margin-left: 30px;
+} */
+
+.site-auth .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-auth .link:hover,
+.site-auth .link:focus {
+  color: var(--akcent);
+}
+
+/* MAIN ---------------------------------------- */
+
+/* content one page ---------------------------------------- */
+
+/* hero ---------------------------------------- */
 .content.button {
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--color-fon-hed-fot);
   text-transform: uppercase;
 }
 .content .hero-text {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 696px;
+  height: 120px;
   color: var(--primary-wite-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
 }
-/* work */
+/* work ---------------------------------------- */
+.content .work {
+  display: flex;
+  padding-top: 94px;
+}
+.content .work .item:not(:last-child) {
+  margin-right: 30px;
+}
 .content .work-main {
+  display: flex;
+  padding-bottom: 10px;
+
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 .content .work-secondary {
+  width: 270px;
+  height: 75px;
   color: var(--secondary-color);
-
   font-size: 14px;
   line-height: 1.71;
 }
 
-/* photo */
+/* photo ---------------------------------------- */
+.content.photo {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.content.photo .list {
+  display: flex;
+  padding-top: 50px;
+}
+.content.photo .list .photo:not(:last-child) {
+  margin-right: 30px;
+}
+
 .content .head-text {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
-/* employees */
-.content.employees {
+/* employees ---------------------------------------- */
+.employees {
   background-color: var(--secondary-color-two);
+}
+.content.employees .conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.content.employees .list {
+  display: flex;
+}
+.content.employees .fon:not(:last-child) {
+  margin-right: 30px;
 }
 .content.employees .fon {
   background-color: var(--primary-wite-color);
 }
 .content .employees-main {
+  display: flex;
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -157,7 +271,8 @@ body {
   line-height: 1.18;
 }
 
-/* content two page */
+/* content two page ---------------------------------------- */
+
 .photo-text {
   text-decoration: none;
 }
@@ -175,27 +290,37 @@ body {
   line-height: 1.97;
 }
 
-/* footer */
-.footer {
+/* FOOTER ---------------------------------------- */
+footer {
   background-color: var(--color-fon-hed-fot);
+}
+.footer.conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
 }
 .footer-studio {
   color: var(--primary-wite-color);
 }
 .footer .footer-adres {
-  color: #fff;
+  display: block;
+  margin-bottom: 8px;
 
+  color: #fff;
   font-size: 14px;
   line-height: 1.7;
-
   text-decoration: none;
 }
 .footer .footer-nav {
-  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-bottom: 8px;
 
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
-
   text-decoration: none;
 }
 

@@ -4,46 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="vievport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="page-heder">
-
-    <!-- <logo> -->
-
-    <nav>
-      <a href="./images/webStudio.jpg" class="logo">Web<span class="studio">Studio</span></a>
-
-      <!-- <title> -->
-
-      <ul  class="site-nav list">
-        <li>
-          <a href="./index.html" class="link curent">Студия</a>
-        </li>
-        <li>
-          <a href="./portfolio.html" class="link">Портфолио</a>
-        </li>
-        <li>
-          <a href="/" class="link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-      <ul class="site-auth list">
-        <li>
-          <a href="emailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel=+380991111111" class="link">+380991111111</a>
-        </li>
-      </ul>
+  <header class="">
+    <div class="conteiner main-meny">
+      <nav class="nav">
+        <!-- <logo> -->
+        <a href="./images/webStudio.jpg" class="logo">Web<span class="studio">Studio</span></a>
+        <!-- <title> -->
+        <ul  class="site-nav list">
+          <li class="item">
+            <a href="./index.html" class="link curent">Студия</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item">
+            <a href="/" class="link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+        <!-- auth -->
+        <ul class="site-auth list">
+          <li class="item">
+            <a href="emailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel=+380991111111" class="link">+380991111111</a>
+          </li>
+        </ul>
+    </div>
   </header>
 
-  <!-- <types of work> -->
-
   <main> 
-
     <!-- hero --> 
     <section class="content button">
       <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
@@ -51,24 +47,24 @@
     </section> 
 
     <!-- approach in work --> 
-    <section class="content work">
-      <ul class="list">
-        <li>
+    <section class="content conteiner">
+      <ul class="list work">
+        <li class="item">
           <b class="work-main">Внимание к деталям</b>
           <p class="work-secondary">Идейные соображения, а также начало повседневной работы по
             формированию позиции.</p>
         </li>
-        <li>
+        <li class="item">
           <b class="work-main">Пунктуальность</b>
           <p class="work-secondary">Задача организации, в особенности же рамки и место обучения кадров
             влечет за собой.</p>
         </li>
-        <li>
+        <li class="item">
           <b class="work-main">Планирование</b>
           <p class="work-secondary">Равным образом консультация с широким активом в значительной степени
             обуславливает.</p>
         </li>
-        <li>
+        <li class="item">
           <b class="work-main">Современные технологии</b>
           <p class="work-secondary">Значимость этих проблем настолько очевидна, что реализация плановых
             заданий.</p>
@@ -77,21 +73,24 @@
     </section>
 
     <!-- <types of work in photo> -->
-    <section class="content photo">
+    <section class="content photo conteiner">
       <h2 class="head-text">Чем мы занимаемся</h2>
       <ul  class="list">
-        <li>
+        <li class="photo">
           <img src="./images/img.jpg"
+          
             width="370"
             alt="Bерстка дизайн внешнее оформление"/>
         </li>
-        <li>
+        <li class="photo">
           <img src="./images/img2.jpg"
+          
             width="370"
             alt="Разработка мобильный приложений"/>
         </li>
-        <li>
+        <li class="photo">
           <img src="./images/img3.jpg"
+          
             width="370"
             alt="Творческая деятельность"/>
         </li>
@@ -99,8 +98,9 @@
     </section>
 
     <!-- <employees> -->
-    <section class="content employees">
-      <h2 class="head-text">Наша команда</h2>
+    <section class="employees">
+      <div class="conteiner">
+        <h2 class="head-text">Наша команда</h2>
       <ul class="list">
         <li class="fon">
           <img src="./images/1.jpg" 
@@ -131,12 +131,14 @@
           <p class="employees-secondary">UI Designer</p>
         </li>
       </ul>
+      </div>
+      
     </section>
   </main>
 
   <!-- <supporting information> -->
     <footer>
-      <section class="footer">
+      <section class="footer conteiner">
         <a href="./images/webStudio.jpg" class="logo">Web<span class="footer-studio">Studio</span></a>
       <adress>
       <ul class="list">
